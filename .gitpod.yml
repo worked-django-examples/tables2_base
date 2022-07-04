@@ -1,0 +1,23 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: |
+      python -m venv venv
+      source venv/bin/activate
+      pip install --upgrade pip wheel setuptools
+      pip install -r requirements.txt
+      cd django
+      python manage.py migrate
+    command: |
+      source venv/bin/activate
+      cd  /workspace/tables2_rt/django
+      python manage.py runserver
+  
+ports:
+  - port: 8000
+    visibility: private
+    onOpen: open-preview
+
+  # PostgreSQL server
+  - port: 5432
+    onOpen: ignore
