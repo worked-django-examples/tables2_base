@@ -12,7 +12,7 @@ tasks:
       python worldbank-population.py
     command: |
       source venv/bin/activate
-      cd  /workspace/tables2_rt/django
+      cd  /workspace/tables2_base/django
       python manage.py runserver
   
 ports:
