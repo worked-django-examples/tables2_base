@@ -18,4 +18,8 @@ The gitpod image will load django and postgres.
  - create `.gitignore`
  - add `.env` to `.gitignore`
  - change settings for passwords/CSRF secrets
-## 
+ ## 
+
+## to run on your local with docker
+
+`docker run --name postgresql -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 --restart always -v /tmp/pgdata:/tmp/var/lib/postgresql/data -d postgres:13`
