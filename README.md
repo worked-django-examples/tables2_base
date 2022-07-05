@@ -1,4 +1,4 @@
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/worked-django-examples/tables2_base/tree/country-wip)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/worked-django-examples/tables2_base)
 
 # Demos, walkthrus, code inspection django-tables2
 
